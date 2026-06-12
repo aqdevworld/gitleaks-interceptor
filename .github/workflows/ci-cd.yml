@@ -20,7 +20,7 @@ jobs:
           fetch-depth: 0
 
       - name: setup-python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
@@ -31,7 +31,7 @@ jobs:
         run: pytest
 
       - name: gitleaks-scan
-        uses: gitleaks/gitleaks-action@v2
+        uses: gitleaks/gitleaks-action@v3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
