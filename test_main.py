@@ -10,7 +10,7 @@ def test_read_root():
     assert response.json() == {
         "status": "Online",
         "system": "Gitleaks Interceptor Pipeline",
-        "gate_status": "Active"
+        "gate-status": "Active"
     }
 
 
